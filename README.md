@@ -2,7 +2,7 @@
 
 ### Features:
 1. Assignment Notifications.
-2. Cards(Quiz, Assignments, News)
+2. Tabs(Quiz, Assignments, News)
 3. ToDo List.
 
 
