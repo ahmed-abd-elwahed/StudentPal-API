@@ -1,0 +1,52 @@
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MTNlZDkzNjkyYzVhODlhZDU5ODQ2ZjkiLCJpYXQiOjE2MzE1MTM4NDF9.SGQ8xChglrIlNkXzGD0CtXqBa40EctU-6Gj5QHN1rf4N_TtkYLZ1bndqt4TmCrOjmLpRcLKHB67a-rByN64BHDJjZEVaRr_FrSj-bBnapib-hvK-hi-mQeVGRONDE6EwBO6kgxanDp94VMCAfb3RFWTfMw_ibcmbtAFyJDqrGtcpMQO62kakoLFlTpJ7460n4R1kmOaBMjiJq_tXjaabc5t9Fv5Zv9_jEp0CdmcaFUbO9xi5YEt6C2SS79EffJlt-Y1QTe9WNrpJrFH2nc6jK4cR_GdB6Y8PG8rQm-SDe_vAqtjqGD2YibH0ccaM64edQWjN_ispZ-yMmWvyspHLFAkC4jA12uaDl4XoFc8HK24j4DVD624uQgfVz7VD5Wmy0-EOGC-snMT_HvGvDFuQOX6CBPvn2Bt_315stdS77f99nU4TuWOz1roZJQ6kGU5YKyc9YnFLPcJ-_dZdmYwEEFAzkBoiZYCNepUGidAXX4uB8iVIlIB5gWnVWERT7xqY8lM_Ey3GR2vNhDV4tjhhVTBQOVFDlA3CLqmDoSebkEIfaMELSB8hFuhC2k4XwbgRdro17PlJr_4g4mgX1NPhpiQxBEk260f-Xf2hJTQ-iml8yZvJdS6lnPzgNXR_zB0bzPoT6_2OQr0UHQx2EAVsPCnZ6aj87KJ1NMR0eaKEqz0
+
+{
+    "title":"How to install windows 11 2022",
+    "author":"John Doe",
+    "url":"http://www.myblog.com/windows-11-2022",
+    "likes":56,
+    "user":"613cc331d727492aa23e7ec6"
+}
+
+###
+
+POST http://localhost:3003/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "name":"medo",
+    "pass":"1234567"
+    
+}
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+
+DELETE http://localhost:3003/api/users/613cd292a738da727657fac6
+
+
+###
+
+POST http://localhost:3003/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "pass":"1234567"
+    
+}
+
+###
+
+DELETE http://localhost:3003/api/blogs/613f7efbdd37f8c456d297b5
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCO9.eyJzdWIiOiI2MTNlZDkzNjkyYzVhODlhZDU5ODQ2ZjkiLCJpYXQiOjE2MzE1MTM4NDF9.SGQ8xChglrIlNkXzGD0CtXqBa40EctU-6Gj5QHN1rf4N_TtkYLZ1bndqt4TmCrOjmLpRcLKHB67a-rByN64BHDJjZEVaRr_FrSj-bBnapib-hvK-hi-mQeVGRONDE6EwBO6kgxanDp94VMCAfb3RFWTfMw_ibcmbtAFyJDqrGtcpMQO62kakoLFlTpJ7460n4R1kmOaBMjiJq_tXjaabc5t9Fv5Zv9_jEp0CdmcaFUbO9xi5YEt6C2SS79EffJlt-Y1QTe9WNrpJrFH2nc6jK4cR_GdB6Y8PG8rQm-SDe_vAqtjqGD2YibH0ccaM64edQWjN_ispZ-yMmWvyspHLFAkC4jA12uaDl4XoFc8HK24j4DVD624uQgfVz7VD5Wmy0-EOGC-snMT_HvGvDFuQOX6CBPvn2Bt_315stdS77f99nU4TuWOz1roZJQ6kGU5YKyc9YnFLPcJ-_dZdmYwEEFAzkBoiZYCNepUGidAXX4uB8iVIlIB5gWnVWERT7xqY8lM_Ey3GR2vNhDV4tjhhVTBQOVFDlA3CLqmDoSebkEIfaMELSB8hFuhC2k4XwbgRdro17PlJr_4g4mgX1NPhpiQxBEk260f-Xf2hJTQ-iml8yZvJdS6lnPzgNXR_zB0bzPoT6_2OQr0UHQx2EAVsPCnZ6aj87KJ1NMR0eaKEqz0

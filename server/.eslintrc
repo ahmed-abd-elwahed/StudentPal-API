@@ -1,0 +1,24 @@
+{
+    
+    "root": true,
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jquery": true,
+      "jest": true
+    },
+    
+    "extends": "airbnb",
+    "rules": {
+      "no-underscore-dangle": "off",
+      "linebreak-style": 0,
+      "quotes": [
+        "error",
+        "single",
+        {
+          "allowTemplateLiterals": true
+        }
+      ]
+    }
+    
+  }
